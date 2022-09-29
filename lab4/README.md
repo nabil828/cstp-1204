@@ -3,10 +3,10 @@ Lab 4: Working with a Tour de France DataSet
 ... could be a tour de force.
 
 
-* This is the first lab activity and is intended to help you get acquainted with several Java features rather quickly.
+<!-- * This is the first lab activity and is intended to help you get acquainted with several Java features rather quickly. -->
 * **You can work in pairs or alone for this activity.** Pick a lab partner of your choice to work with.
-* **You should submit your work by Monday, September 21, 9:00 a.m.** Instructions for submitting your work will be announced along with instructions on submitting MP0.
-* _Lab work submissions will be lightly reviewed and graded._ For each lab task that you submit, you may offset deficiencies in specific machine problems. Submitting a correct implementation for Lab 1 may help you offset up to 0.5% (of the 3%) of marks lost in either MP0 or MP1 (not both). MP0 and MP1 each contribute 3% towards your final raw score.
+<!-- * **You should submit your work by Monday, September 21, 9:00 a.m.** Instructions for submitting your work will be announced along with instructions on submitting MP0. -->
+<!-- * _Lab work submissions will be lightly reviewed and graded._ For each lab task that you submit, you may offset deficiencies in specific machine problems. Submitting a correct implementation for Lab 1 may help you offset up to 0.5% (of the 3%) of marks lost in either MP0 or MP1 (not both). MP0 and MP1 each contribute 3% towards your final raw score. -->
 
 For this lab activity, you will have to write _a small amount of code_ but you should spend time reading the provided code to understand what you should write (which should, hopefully, be relatively straightforward) and also to understand how certain operations can be implemented in Java. Reading and learning from examples is one of the fastest ways to understand a new programming language. And do not hesitate in making changes and understanding what the impact of those changes is.
 
