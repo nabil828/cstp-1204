@@ -44,6 +44,6 @@ Think about what an interface is. You will likely encounter this term in the rea
 
 **Advice**
 <!-- * _Attend your lab section._ -->
-* It is inefficient to expect to learn many language features before writing code. Dive right in! Eclipse can be your friend; in particular: use the code completion feature to see what options you have.
+* It is inefficient to expect to learn many language features before writing code. Dive right in! an IDE can be your friend; in particular: use the code completion feature to see what options you have.
 * Use the Java documentation on the Sun/Oracle website. Learn to read it.
 * Ask for help early — but not too early!

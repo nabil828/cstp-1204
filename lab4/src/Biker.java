@@ -1,5 +1,4 @@
-import java.util.SortedMap;
-import java.util.TreeMap;
+import java.util.*;
 
 /**
  * 
@@ -96,7 +95,29 @@ public class Biker {
         // TODO this is where you must add your code
         // the return statement is bogus for now
         // You need to implement this method correctly.
-        return 0.0;
+
+        // 1 - store the gains
+        List<Double> gains = new ArrayList<>();
+
+        Double gainFromPReviousYear = -1.0;
+        for(Integer year : averageSpeeds.keySet()){
+            if(gainFromPReviousYear != -1)
+            {
+                Double aGain = averageSpeeds.get(year) - gainFromPReviousYear;
+                gains.add(aGain );
+            }
+
+            gainFromPReviousYear = averageSpeeds.get(year);
+        }
+
+        // 2 - get the max gain
+        Double max = Double.MIN_VALUE;
+        for(Double i : gains){
+            if(i > max)
+                max = i;
+        }
+        return max;
+//        return 0.0;
     }
 
     /**
@@ -109,7 +130,21 @@ public class Biker {
         // TODO: return the median speed for this biker across the years
         // the return statement is bogus for now.
         // You need to implement this method correctly.
-        return 0.0;
+        List<Double> speedEntries = new ArrayList<>();
+        for(Integer year : averageSpeeds.keySet() ){
+            speedEntries.add(averageSpeeds.get(year));
+        }
+        Collections.sort(speedEntries);
+        if(speedEntries.size() % 2 == 1) {
+            // odd
+            return speedEntries.get(speedEntries.size() / 2);
+        }else{ // even
+            return (
+                    speedEntries.get(speedEntries.size() / 2    ) +
+                    speedEntries.get(speedEntries.size() / 2 - 1)
+                    ) /2;
+        }
+//        return 0.0;
     }
 
     /**

@@ -118,14 +118,31 @@ public class TdFMain {
 
             // How to print formatted strings
             // Note the use of String.format( )
-            System.out.println(String.format("%-30s: %s",
-                    currentBiker.getName(), currentBiker.getBestGain()));
+            System.out.println(String.format("%-30s: %s %s",
+                    currentBiker.getName(), currentBiker.getBestGain(), currentBiker.getMedianSpeed()));
         }
 
         // TODO: Compute the median speed across all the entries.
         double medianSpeed = 0;
         // Your code for this should go here and should set the correct value in
         // medianSpeed.
+        List<Double> allSpeeds = new ArrayList<>();
+        for (String bikerName : allBikers.keySet()) {
+            for ( int i = 2005 ; i <= 2012; i++){
+                if(allBikers.get(bikerName).getSpeedForYear(i) != 0)
+                    allSpeeds.add(allBikers.get(bikerName).getSpeedForYear(i));
+            }
+
+        }
+        // to get the median of allSpeeds Array list
+        if(allSpeeds.size() % 2 == 1){
+            medianSpeed = allSpeeds.get(allSpeeds.size()/2);
+        }else{
+            medianSpeed = (
+                    allSpeeds.get(allSpeeds.size()/2  ) +
+                    allSpeeds.get(allSpeeds.size()/2 -1 )
+            ) /2;
+        }
 
         System.out.println("\nThe median speed at the Tour de France is "
                 + medianSpeed);
@@ -140,5 +157,6 @@ public class TdFMain {
 
         System.out.println("\nThe median of medians at the Tour de France is "
                 + medianOfMedians);
+
     }
 }
