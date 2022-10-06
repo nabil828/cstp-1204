@@ -13,6 +13,8 @@ public class Lab5 {
     private static int dayOfYear(Month month, int dayOfMonth, int year) {
 
         int[] monthLengths = new int[]{31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+        if(isLeap(year))
+            monthLengths[1]++;
         int sum = 0;
         for (int i = 1; i < month.ordinal() + 1; i++) {
             sum += monthLengths[i - 1];
