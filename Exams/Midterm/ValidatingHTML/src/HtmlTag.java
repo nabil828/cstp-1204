@@ -1,4 +1,4 @@
-// CPEN 221 / Fall 2015 / MP2: HTML Validator
+package Exams.Midterm.ValidatingHTML.src;// CPEN 221 / Fall 2015 / MP2: HTML Validator
 // You should not modify this file!
 // You should read the code here to understand how the HtmlTag class is implemented.
 

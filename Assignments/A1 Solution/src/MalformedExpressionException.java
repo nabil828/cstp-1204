@@ -5,11 +5,11 @@
  * @see #getMessage()
  */
 
-public class MalformedExpressionException extends Exception {
+public class MalformedExpressionException2 extends Exception {
 
     /** Constructs a MalformedExpressionException with no message.
      */
-    public MalformedExpressionException() {
+    public MalformedExpressionException2() {
         super();
     }
 
@@ -17,7 +17,7 @@ public class MalformedExpressionException extends Exception {
 
     /** Constructs a MalformedExpressionException with the detail message.
      */
-    public MalformedExpressionException( String message ) {
+    public MalformedExpressionException2( String message ) {
         super( message );
     }
 }

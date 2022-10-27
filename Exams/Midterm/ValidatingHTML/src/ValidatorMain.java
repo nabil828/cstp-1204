@@ -1,4 +1,4 @@
-// Instructor-provided code.
+package Exams.Midterm.ValidatingHTML.src;// Instructor-provided code.
 // This program tests your HTML validator object on any file or URL you want.
 //
 // When it prompts you for a file name, if you type a simple string such
