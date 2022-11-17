@@ -1,7 +1,8 @@
 The Graph ADT and Social Networks
-# This is a group assignment and you will be assigned to groups.
+# Logistics
+- This is a group assignment and you will be assigned to groups.
+- Due in two weeks - Dec. 1st.
 
-===
 ### Background
 
 In this assignment, you will implement a `Graph` interface using two different graph representations. You will then develop several algorithms that use the `Graph` interface that might be used in a social network.
